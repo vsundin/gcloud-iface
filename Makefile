@@ -8,5 +8,4 @@ build:
 
 run:
 	docker volume create $(IMAGE)-root-volume || true
-	#docker run -v $(IMAGE)-root-volume:/root -it $(IMAGE):$(TAG)
-	docker run -it $(IMAGE):$(TAG)
+	docker run -v $(IMAGE)-root-volume:/root -it $(IMAGE):$(TAG)
